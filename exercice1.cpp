@@ -1,12 +1,11 @@
-
 #include <iostream>
 #include <cmath>
 using namespace std;
 
 class Forme {
 public:
-    virtual double aire() const = 0; // méthode virtuelle pure
-    virtual ~Forme() {} // destructeur virtuel
+    virtual double aire() const = 0; 
+    virtual ~Forme() {} 
 };
 
 class Cercle : public Forme {
@@ -56,7 +55,7 @@ int main() {
             cin >> L;
             formes[i] = new Rectangle(l, L);
         } else {
-            cout << "Choix invalide. Création d’un rectangle par défaut." << endl;
+            cout << "Choix invalide. Création d'un rectangle par défaut." << endl;
             formes[i] = new Rectangle(1, 1);
         }
     }
